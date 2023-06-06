@@ -1,3 +1,5 @@
+// Coursel 
+
 const sliderItems = document.querySelectorAll(".slider-item");
 let currentItemIndex = 0;
 
