@@ -24,3 +24,4 @@ function prevSlide() {
 
 showSlide(currentItemIndex);
 setInterval(nextSlide, 3000);
+// TEKNIK KOMPUTER DAN JARINGAN
