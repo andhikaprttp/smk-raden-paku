@@ -293,7 +293,71 @@
     <!-- akhir card jurusan -->
 
     <!-- perpustakaan -->
-    
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold leading-tight text-gray-900 mb-8">Perpustakaan Digital</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Buku 1</h3>
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <canvas id="pdfViewer1"></canvas>
+            </div>
+            <a href="pdf/buku1.pdf" target="_blank" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">Buka PDF</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Buku 2</h3>
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <canvas id="pdfViewer2"></canvas>
+            </div>
+            <a href="pdf/buku2.pdf" target="_blank" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">Buka PDF</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Buku 3</h3>
+            <div class="aspect-w-16 aspect-h-9 mb-4">
+              <canvas id="pdfViewer3"></canvas>
+            </div>
+            <a href="pdf/buku3.pdf" target="_blank" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">Buka PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // Fungsi untuk menampilkan PDF
+    function showPDF(pdfURL, canvasID) {
+      // Ambil elemen canvas
+      const canvas = document.getElementById(canvasID);
+      // Muat PDF
+      pdfjsLib.getDocument(pdfURL).promise.then(function(pdfDoc) {
+        // Muat halaman pertama dari PDF
+        pdfDoc.getPage(1).then(function(page) {
+          const viewport = page.getViewport({ scale: 1 });
+          // Set ukuran canvas sesuai dengan halaman PDF
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          const ctx = canvas.getContext('2d');
+          // Render halaman PDF ke dalam canvas
+          page.render({ canvasContext: ctx, viewport: viewport });
+        });
+      });
+    }
+
+    // Panggil fungsi showPDF untuk setiap PDF yang ingin ditampilkan
+    showPDF('pdf/buku1.pdf', 'pdfViewer1');
+    showPDF('pdf/buku2.pdf', 'pdfViewer2');
+    showPDF('pdf/buku3.pdf', 'pdfViewer3');
+  </script>
+</body>
+
+</html>
+
     
     
     <!-- perpustakaan -->
