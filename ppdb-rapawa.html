@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <title>Pendaftaran PPDB Online</title>
+</head>
+
+<body>
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold leading-tight text-gray-900 mb-8">Pendaftaran PPDB Online</h2>
+      <div class="max-w-md mx-auto">
+        <form action="#" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap</label>
+            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="jurusan" class="block text-gray-700 text-sm font-bold mb-2">Jurusan</label>
+            <select id="jurusan" name="jurusan" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              <option value="">Pilih Jurusan</option>
+              <option value="tkj">Teknik Komputer dan Jaringan</option>
+              <option value="rpl">Rekayasa Perangkat Lunak</option>
+              <option value="mm">Multimedia</option>
+              <option value="ak">Akuntansi</option>
+              <option value="to">Teknik Otomotif</option>
+              <option value="tei">Teknik Elektronika Industri</option>
+            </select>
+          </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Daftar
+            </button>
+            <a href="#" class="text-gray-600 hover:text-gray-800 text-sm">Syarat dan Ketentuan</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content of your webpage goes here -->
+
+</body>
+
+</html>
