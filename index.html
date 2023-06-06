@@ -1,104 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style/coursel.css">
-  <title>SMK Raden Paku</title>
-</head>
-<body>
-  <header class="bg-gray-900">
-    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center">
-          <a href="#" class="text-white text-lg font-semibold">SMK RADEN PAKU</a>
-        </div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-4">
-            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tentang</a>
-            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Program</a>
-            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Kontak</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/coursel.css" />
+    <title>SMK Raden Paku</title>
+  </head>
+  <body>
+    <header class="bg-gray-900">
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-white text-lg font-semibold"
+              >SMK RADEN PAKU</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Beranda</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Tentang</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Program</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Kontak</a
+              >
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle menu</span>
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="-mr-2 flex md:hidden">
-          <button type="button" id="mobile-menu-toggle"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Toggle menu</span>
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
+      </nav>
+
+      <div class="md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Beranda</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Tentang</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Program</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Kontak</a
+          >
         </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="md:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
-        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tentang</a>
-        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Program</a>
-        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kontak</a>
+    <!-- coursel -->
+    <div class="slider-container">
+      <div class="slider-item">
+        <img src="images/slide1.jpg" alt="Slide 1" class="w-full" />
+      </div>
+      <div class="slider-item">
+        <img src="images/slide2.jpg" alt="Slide 2" class="w-full" />
+      </div>
+      <div class="slider-item">
+        <img src="images/slide3.jpg" alt="Slide 3" class="w-full" />
       </div>
     </div>
-  </header>
-  
-  <!-- coursel -->
-  <div class="slider-container">
-    <div class="slider-item">
-      <img src="images/slide1.jpg" alt="Slide 1" class="w-full">
-    </div>
-    <div class="slider-item">
-      <img src="images/slide2.jpg" alt="Slide 2" class="w-full">
-    </div>
-    <div class="slider-item">
-      <img src="images/slide3.jpg" alt="Slide 3" class="w-full">
-    </div>
-  </div>
-  <!-- akhir coursel -->
-  
-  <!-- section pengenalan smk -->
-  
-  <section class="bg-gray-100 py-12">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:flex lg:items-center lg:justify-between">
-        <div class="lg:w-1/2">
-          <h2 class="text-4xl font-bold leading-tight text-gray-900 mb-4">Selamat Datang di SMK Raden Paku</h2>
-          <p class="text-gray-700 mb-6">SMK adalah sekolah menengah kejuruan yang menyediakan berbagai program keahlian untuk persiapan karir di dunia kerja.</p>
-          <p class="text-gray-700 mb-6">SMK kami menawarkan jurusan-jurusan berikut:</p>
-          <ul class="list-disc list-inside text-gray-700 mb-6">
-            <li>Teknik Permesinan</li>
-            <li>Teknik Bisnis dan Sepeda Motor</li>
-<li>Teknik Komputer dan Jaringan (TKJ)</li>
-            <li>Teknik Instalasi Tenaga Listrik</li>
-            <li>Farmasi</li>
-          </ul>
-          <a href="#" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-medium">Pelajari Lebih Lanjut</a>
-        </div>
-        <div class="lg:w-1/2 mt-8 lg:mt-0">
-          <img src="school-image.jpg" alt="School Image" class="w-full h-auto">
+    <!-- akhir coursel -->
+
+    <!-- section pengenalan smk -->
+
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-1/2">
+            <h2 class="text-4xl font-bold leading-tight text-gray-900 mb-4">
+              Selamat Datang di SMK Raden Paku
+            </h2>
+            <p class="text-gray-700 mb-6">
+              SMK adalah sekolah menengah kejuruan yang menyediakan berbagai
+              program keahlian untuk persiapan karir di dunia kerja.
+            </p>
+            <p class="text-gray-700 mb-6">
+              SMK kami menawarkan jurusan-jurusan berikut:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+              <li>Teknik Permesinan</li>
+              <li>Teknik Bisnis dan Sepeda Motor</li>
+              <li>Teknik Komputer dan Jaringan (TKJ)</li>
+              <li>Teknik Instalasi Tenaga Listrik</li>
+              <li>Farmasi</li>
+            </ul>
+            <a
+              href="#"
+              class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-medium"
+              >Pelajari Lebih Lanjut</a
+            >
+          </div>
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="school-image.jpg"
+              alt="School Image"
+              class="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
- 
-  
-  <!-- akhir section pengenalan smk -->
-  
-  
+    <!-- akhir section pengenalan smk -->
 
-  
-<script src="komponen/navbar.js"></script>
-</body>
-
+    <script src="komponen/navbar.js"></script>
+  </body>
 </html>
