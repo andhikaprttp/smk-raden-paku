@@ -23,4 +23,4 @@
     showPDF('pdf/buku1.pdf', 'pdfViewer1');
     showPDF('pdf/buku2.pdf', 'pdfViewer2');
     showPDF('pdf/buku3.pdf', 'pdfViewer3');
-  </script>
+ 
