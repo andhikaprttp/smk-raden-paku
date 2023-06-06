@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +26,36 @@
             <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
           </div>
           <div class="mb-4">
-            <label for="jurusan" class="block text-gray-700 text-sm font-bold mb-2">Jurusan</label>
-            <select id="jurusan" name="jurusan" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-              <option value="">Pilih Jurusan</option>
-              <option value="TPM">TPM</option>
-              <option value="TBSM">TBSM</option>
-              <option value="TKJ">TKJ</option>
-              <option value="TITL">TITL</option>
-              <option value="Farmasi">Farmasi</option>
+            <label for="tgl_lahir" class="block text-gray-700 text-sm font-bold mb-2">Tanggal Lahir</label>
+            <input type="date" id="tgl_lahir" name="tgl_lahir" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="gender" class="block text-gray-700 text-sm font-bold mb-2">Jenis Kelamin</label>
+            <select id="gender" name="gender" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              <option value="">Pilih Jenis Kelamin</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
             </select>
+          </div>
+          <div class="mb-4">
+            <label for="nisn" class="block text-gray-700 text-sm font-bold mb-2">NISN</label>
+            <input type="text" id="nisn" name="nisn" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="nik" class="block text-gray-700 text-sm font-bold mb-2">NIK</label>
+            <input type="text" id="nik" name="nik" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="tempat_lahir" class="block text-gray-700 text-sm font-bold mb-2">Tempat, Tanggal Lahir</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Contoh: Jakarta, 1 Januari 2000" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="agama" class="block text-gray-700 text-sm font-bold mb-2">Agama</label>
+            <input type="text" id="agama" name="agama" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          </div>
+          <div class="mb-4">
+            <label for="alamat" class="block text-gray-700 text-sm font-bold mb-2">Alamat Rumah</label>
+            <textarea id="alamat" name="alamat" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="3"></textarea>
           </div>
           <div class="flex items-center justify-between">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
@@ -47,9 +67,5 @@
       </div>
     </div>
   </section>
-
-  <!-- Content of your webpage goes here -->
-
 </body>
-
 </html>
